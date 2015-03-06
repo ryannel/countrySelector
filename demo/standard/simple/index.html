@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+</head>
+
+<body>
+
+	<h1>Simple</h1>
+
+	<label>Countries
+		<select id="countries" placeholder="Please select a country">
+			<option>Please select a country</option>
+		</select>
+	</label>
+
+	<label>Regions
+		<select id="regions" placeholder="Please select a region">
+			<option>Please select a country</option>
+		</select>
+	</label>
+	
+  	<script>
+  		// Once content has been loaded
+		window.onload = function () {
+			// Populate and link country and region select
+			countrySelector.countrySelect('countries', 'regions');
+		};
+	</script>
+
+  	<script src="countries.min.js"></script>
+</body>
+</html>

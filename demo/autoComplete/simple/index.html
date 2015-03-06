@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+</head>
+
+<body>
+
+	<h1>Auto Complete</h1>
+
+	<lable> Country
+		<input id="CountryAutoComplete" placeholder="Please select a country">
+	</lable>
+
+	<lable> Region
+		<input id="RegionAutoComplete" placeholder="Please select a region">
+	</lable>
+
+  	<script>
+		window.onload = function () {
+			countrySelector.autoComplete('#CountryAutoComplete', '#RegionAutoComplete');
+		};
+	</script>
+
+  	<script src="countries.min.js"></script>
+  	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+</body>
+</html>
